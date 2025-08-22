@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery with Grid</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+text-align: center;
+}
+h1 {
+margin: 20px 0;
+}
+/* Photo Gallery */
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+gap: 10px;
+padding: 20px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+.gallery {
+grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+}
+</style>
+</head>
+<body>
+<h1>Travel Blog Photo Gallery</h1>
+<div class="gallery">
+<img src="https://wallpapers.com/images/hd/fan-art-ninjas-of-naruto-shippuden-b2g85n0ajlvb0mtg.jpg" alt="Destination 1">
+<img src="https://wallpaperaccess.com/full/2500093.jpg" alt="Destination 2">
+<img src="https://wallpaperaccess.com/full/677462.jpg" alt="Destination 3">
+<img src="https://wallpaperaccess.com/full/1112046.jpg" alt="Destination 4">
+<img src="https://wallpapercave.com/wp/wp8339119.jpg" alt="Destination 5">
+<img src="https://wallpapercave.com/wp/wp705085.jpg" alt="Destination 6">
+<img src="https://wallpaperaccess.com/full/2500093.jpg" alt="Destination 7">
+<img src="https://wallpapercave.com/wp/wp9426322.jpg" alt="Destination 8">
+</div>
+</body>
+</html>
